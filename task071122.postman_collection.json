@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "266e978e-0e04-43a7-a420-76d9b64ea674",
+		"name": "task071122",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/random-joke",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://[::1]:3000/api/random-joke",
+					"protocol": "http",
+					"host": [
+						"[::1]"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"random-joke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/users/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"Kajal\",\n  \"lastName\": \"Singh\",\n  \"email\": \"kajalsingh@gmail.com\",\n  \"password\": \"kajal123\"\n}"
+				},
+				"url": {
+					"raw": "http://[::1]:3000/api/users/signup",
+					"protocol": "http",
+					"host": [
+						"[::1]"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/users/login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"kajalsingh@gmail.com\",\n  \"password\": \"kajal123\"\n}"
+				},
+				"url": {
+					"raw": "http://[::1]:3000/api/users/login",
+					"protocol": "http",
+					"host": [
+						"[::1]"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/users/me [middleware]",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthamFsc2luZ2hAZ21haWwuY29tIiwidXNlcklkIjoxLCJpYXQiOjE2Njc5MDE2NTQsImV4cCI6MTY2NzkwMTcxNH0.llsQmnckUh3Mm3l3WY0YmDfghNtAPGesTWHbw38h2Y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://[::1]:3000/api/users/me",
+					"protocol": "http",
+					"host": [
+						"[::1]"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/users/1 [guard]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImthamFsc2luZ2hAZ21haWwuY29tIiwidXNlcklkIjoxLCJpYXQiOjE2Njc5MDE2NTQsImV4cCI6MTY2NzkwMTcxNH0.llsQmnckUh3Mm3l3WY0YmDfghNtAPGesTWHbw38h2Y4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://[::1]:3000/api/users/1",
+					"protocol": "http",
+					"host": [
+						"[::1]"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": ""
+		}
+	]
+}

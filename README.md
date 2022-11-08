@@ -35,3 +35,5 @@ $ npm install
 $ npm run start:dev
 ```
 
+### Swagger 
+http://[::1]:3000/api#/

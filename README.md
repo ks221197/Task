@@ -36,4 +36,4 @@ $ npm run start:dev
 ```
 
 ### Swagger 
-http://[::1]:3000/api#/
+<a href="http://[::1]:3000/api#/" target="_blank">http://[::1]:3000/api#/</a>

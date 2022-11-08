@@ -49,6 +49,8 @@ export class UserService {
     try {
       console.log('findUserService');
       const user = await this.userRepository.findOne({ userId: userId });
+      if (!user)
+        throw { message: 'No user found', status: HttpStatus.NOT_FOUND };
       return user;
     } catch (error) {
       console.log('findUserService:Error');

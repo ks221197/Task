@@ -8,16 +8,20 @@ As mentioned project runs on in-memory database you don't need to create any tab
 
 ### File details
 <a href="https://github.com/ks221197/Task/blob/071122-unitask/src/filters/httpException.filter.ts" target="_blank">httpException.filter.ts</a>
-For custom exception handler in-order to changes error response format
+
+- For custom exception handler in-order to changes error response format
 
 <a href="https://github.com/ks221197/Task/blob/071122-unitask/src/exceptions/httpException.ts" target="_blank">httpException.ts</a>
-Work as more like interface by extending javascript error constructor
+
+- Work as more like interface by extending javascript error constructor
 
 <a href="https://github.com/ks221197/Task/blob/071122-unitask/src/pipes/validation/validation.pipe.ts" target="_blank">validation.pipe.ts</a>
-Validation pipe for request data validation and will return single error message with bad request http status
+
+- Validation pipe for request data validation and will return single error message with bad request http status
 
 <a href="https://github.com/ks221197/Task/blob/071122-unitask/src/config/config.service.ts" target="_blank">config.service.ts</a>
-Contains database connection configuration
+
+- Contains database connection configuration
 
 ## Installation
 

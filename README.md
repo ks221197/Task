@@ -7,11 +7,11 @@ Used: <a href="https://www.sqlite.org/inmemorydb.html" target="_blank">SQLite in
 As mentioned project runs on in-memory database you don't need to create any tables, when you run this project table will automatically creates by using <a href="https://github.com/ks221197/Task/tree/071122-unitask/src/migrations" target="_blank">migration file</a> which created with  <a href="https://typeorm.io/" target="_blank">typeorm</a>.
 
 ### File details
-<a href="https://github.com/ks221197/Task/blob/071122-unitask/src/filters/httpException.filter.ts" target="_blank">httpException.filter.ts</a>
+<a href="https://github.com/ks221197/Task/blob/071122-unitask/src/filters/httpException.filter.ts" target="">httpException.filter.ts</a>
 
 - For custom exception handler in-order to changes error response format
 
-<a href="https://github.com/ks221197/Task/blob/071122-unitask/src/exceptions/httpException.ts" target="_blank">httpException.ts</a>
+<a href="https://github.com/ks221197/Task/blob/071122-unitask/src/exceptions/httpException.ts" target="">httpException.ts</a>
 
 - Work as more like interface by extending javascript error constructor
 
@@ -35,3 +35,5 @@ $ npm install
 $ npm run start:dev
 ```
 
+### Swagger 
+<a href="http://[::1]:3000/api#/" target="_blank">http://[::1]:3000/api#/</a>

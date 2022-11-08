@@ -48,4 +48,22 @@ export class AuthService {
       );
     }
   }
+
+  async verifyToken(token) {
+    try {
+      console.log('loginService');
+
+      const userData = this.jwtService.verify(token);
+
+      return {
+        ...userData,
+      };
+    } catch (error) {
+      console.log('loginService:Error');
+      throw new HttpException(
+        error.status ? error.status : HttpStatus.INTERNAL_SERVER_ERROR,
+        error.message ? error.message : error,
+      );
+    }
+  }
 }

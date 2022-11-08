@@ -37,3 +37,6 @@ $ npm run start:dev
 
 ### Swagger 
 <a href="http://[::1]:3000/api#/" target="_blank">http://[::1]:3000/api#/</a>
+
+### Postman collection
+<a href="https://github.com/ks221197/Task/blob/071122-unitask/task071122.postman_collection.json" target="_blank">https://github.com/ks221197/Task/blob/071122-unitask/task071122.postman_collection.json</a>

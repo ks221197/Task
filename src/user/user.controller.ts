@@ -25,7 +25,7 @@ import { UserService } from './user.service';
 @Controller('users')
 export class UserController {
   constructor(
-    private readonly userService: UserService,
+    private readonly userService: UserService, //this is feature frm typescript which creates varivle and assign value, go to https://www.typescriptlang.org/docs/handbook/2/classes.html#constructors in that we created const x; but her without creaating variable directly assigned
     private readonly authService: AuthService,
   ) {}
 
